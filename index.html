@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Layout</title>
+    <style>
+        #header {
+            border: 1px solid black;
+            color: aliceblue;
+            height: 70px;
+            text-align: center;
+            background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-abstract-technology-background-technical-electric-picture-image_1252603.jpg);
+        }
+
+        #menu {
+            border: 0.5px solid black;
+            /* height: 150px; */
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #001832;
+                font-family:sans-serif ;
+
+                li {
+                    float: left;
+                }
+
+                li a {
+                    text-align: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    color: aliceblue;
+                    display: block;
+                }
+                li a:hover {
+                    background-color: aliceblue;
+                    color: black;
+                }
+
+
+            }
+
+            #content {
+                border: 1px solid black;
+                height: 500px;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Nitil's web</h1>
+    </div>
+    <div id="menu">
+        
+        <ul>
+            <li><a href=#home target="iframe"><b>Home</b></a></li>
+            <li><a href="#about" target="iframe"><b>About</b></a></li>
+            <li><a href="html-lessons.html" target="iframe"><b>Html</b></a></li>
+            <li><a href="css-lessons.html" target="iframe"><b>CSS</b></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <iframe src="" name="iframe" height="605px" width="99.8%" style="border: 2px solid black;" ></iframe>
+    </div>
+</body>
+
+</html>

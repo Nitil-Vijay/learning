@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="file:///D:/Nitil/index.html">Back to home</a>
+        <title>Tables</title>
+        <style>
+            body {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhPLv8jcRFm4IKXseU4MHe0uaXhnWHWyDaDUk2Bi_AQ&s.jpg');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: cover;
+                 }
+            table, th, td {
+                border: 2px solid black;
+            }
+            th,td {border-color: aliceblue;padding: 15px;} 
+            tr:nth-child(even){background-color: rgb(244, 119, 255,0.4);}
+            th:nth-child(even),td:nth-child(even){background-color: rgba(244, 119, 255,0.4);}
+            tr:hover{background-color: rgba(255, 145, 0, 0.729);}   
+        </style>
+    </head>
+    <body>
+        <p>This is a table</p>
+        <table style="width:100%">
+            <tr>
+                <th style="width: 34%;">Name</th>
+                <th style="width: 25%;">Team</th>
+                <th style="width: 40%;">Role</th>
+            </tr>
+            <tr>
+                <td>Virat</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Starc</td>
+                <td>Australia</td>
+                <td>Bowler</td>
+            </tr>
+        
+        </table>
+        <br>
+        <br>
+        <p>Background color with padding</p>
+        <br>
+        <table style="background-color: rgb(203, 255, 238); width:100%;border-color: aliceblue;border-collapse: collapse;">
+            <tr>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>Virat</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Starc</td>
+                <td>Australia</td>
+                <td>Bowler</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <p>This table has round corners and border style</p>
+        <p>This table has common column name for two columns and cell spacing</p>
+        <br>
+        <table style="width:100%;border-spacing:20px;border-style: inset;border:5px solid black">
+            <tr>
+                <th colspan="2">Name and Team</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>Virat</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>India</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Starc</td>
+                <td>Australia</td>
+                <td>Bowler</td>
+            </tr>
+            <br>
+            <br>
+        </table>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Hello</th>
+                <td>Hello</td>
+                <td rowspan="3">Hello</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Hello</th>
+                <td>Hello</td>
+            </tr>
+            <tr>
+                <td>Hello</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <p>Strips and hiding the last column</p>
+        <br>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color: rgba(11, 212, 0, 0.749);">
+                <col span="1" style="background-color: rgba(0, 205, 113, 0.545);">
+                <col span="1" style="visibility: collapse;"
+            </colgroup>
+            <tr style="border-bottom: 2px solid black;">
+                <th>Wild</th>
+                <td>Wild</td>
+                <td>Wild</td>
+            </tr>
+            <tr>
+                <th>Wild</th>
+                <td>Wild</td>
+                <td>Wild</td>
+            </tr>
+            <tr>
+                <th>Wild</th>
+                <td>Wild</td>
+                <td>Wild</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
